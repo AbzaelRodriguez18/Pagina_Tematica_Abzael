@@ -1,0 +1,129 @@
+
+body {
+    font-family: "Playpen Sans", cursive;
+    background-color: #e9ecef;
+    color: black    ;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    border-bottom: 5px solid #cc0000;
+}
+
+header h1 {
+    margin: 0 0 15px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #cc0000;
+    text-decoration: underline;
+}
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+}
+
+section:hover {
+    border: 1px solid #cc0000;
+}
+
+h2 {
+    color: #cc0000;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #1a1a1a;
+}
+
+p {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+    display: grid;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+.Prototipo {
+    width: 100%;
+    max-width: 400px;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.redes-sociales {
+    margin-top: 10px;
+}
+
+.redes-sociales a {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+
+.redes-sociales .fa-twitter:hover {
+    color: #1da1f2;
+}
+
+.redes-sociales .fa-youtube:hover {
+    color: #ff0000;
+}
+section {
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+section:hover {
+    border-color: rgba(204, 0, 0, 0.3);
+
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+
+    transform: translateY(-4px);
+}
