@@ -1,0 +1,5 @@
+{
+    "enabled": false,
+    "classifier": "typesafe/jev-latest",
+    "minConfidence": 0.7
+}

@@ -1,0 +1,54 @@
+{
+    "enabled": true,
+    "protections": {
+        "toolNames": [
+            "todo",
+            "task",
+            "subagent",
+            "agent",
+            "skill",
+            "oracle",
+            "librarian",
+            "contrarian",
+            "code_reviewer",
+            "gnosis",
+            "triage_comments"
+        ],
+        "pathGlobs": [
+            "**/.env",
+            "**/.env.*",
+            "**/*.pem",
+            "**/*.key",
+            "**/id_rsa*",
+            "**/id_ed25519*",
+            "**/secrets/**",
+            "**/*.p12",
+            "**/*.pfx"
+        ],
+        "recentTurns": 4
+    },
+    "thresholds": {
+        "minCharsSaved": 200
+    },
+    "strategies": {
+        "dedupe": {
+            "enabled": true
+        },
+        "errorPurge": {
+            "enabled": true,
+            "minTurnsOld": 4
+        },
+        "supersededFileOps": {
+            "enabled": true
+        }
+    },
+    "gate": {
+        "mode": "on",
+        "cachedPriceRatio": 0.1,
+        "breakEvenThreshold": 22,
+        "breakEvenThresholdByState": {
+            "idle": 22,
+            "mid_loop": 1
+        }
+    }
+}
